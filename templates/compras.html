@@ -4,6 +4,14 @@
 {% block conteudo %}
 Página de compras
 
+<h3>Adicionar item</h3>
+<form action="compras_adc.php" method="post">
+    <input type="text" name="item" placeholder="Esreva o nome do item">
+
+    <input type="sumbit" value="Adicionar">
+</form>
+
+<h3>Minha lista de compras</h3>
 <ul>
     {% for compra in compras %}
         <li>{{ compra.item }}</li>
